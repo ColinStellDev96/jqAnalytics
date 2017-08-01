@@ -1,0 +1,17 @@
+body {
+    background-color: #eaeaea;
+}
+
+h1 {
+    font-size: 62px;
+}
+
+img {
+    height: 400px;
+    width: auto;
+    margin: 0 auto;
+}
+
+a {
+    font-size: 38px;
+}
