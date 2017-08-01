@@ -21,7 +21,7 @@ This page should have several distinct elements, such as  -->
 <!-- - two links to other websites. -->
 
 - Collect the following metrics about the user's browsing experience
-    - Total time spent on page
+    <!-- - Total time spent on page -->
     - What percentage of the page was viewed
         - If they scroll down, and then back up, record the furthest down they ever scrolled
 
