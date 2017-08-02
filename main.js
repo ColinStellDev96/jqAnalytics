@@ -22,11 +22,21 @@ $(document).ready(function(){
         });
 
     /*-=-=-= Time Spent Hovering Mouse Over Each Element on Page =-=-=-*/
-    
+
+
 
     /*-=-=-= How Many Vowels Types Into Text Area =-=-=-*/
-
+        var vowels = ['a', 'e', 'i', 'o', 'u'];
+        
 
     /*-=-=-= Left By Link =-=-=-*/
+        // LINK ONE
+        $('#linkOne').on('click',function(){
+            console.log("User clicked: https://greatdivide.com/");
+        });
+        // LINK TWO
+        $('#linkTwo').on('click',function(){
+            console.log("User clicked: https://outspoke.co/");
+        });
 
 });

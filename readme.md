@@ -31,7 +31,7 @@ This page should have several distinct elements, such as  -->
         - Count all the text that was typed, not just what ends up in the text-area
         - Example: If the user typed "hello", then deleted it, and typed "hello" again, you should record that they typed 4 vowels.
 
-    - If they left the page by clicking a link, record which link they clicked.
+    <!-- - If they left the page by clicking a link, record which link they clicked. -->
 
 - When the user leaves the page, console.log all the metrics you've collected.
     - You can use the `unload` event to run a callback function when the user leaves the page.
