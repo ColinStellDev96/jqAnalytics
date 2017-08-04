@@ -22,10 +22,10 @@ This page should have several distinct elements, such as  -->
 
 - Collect the following metrics about the user's browsing experience
     <!-- - Total time spent on page -->
-    - What percentage of the page was viewed
-        - If they scroll down, and then back up, record the furthest down they ever scrolled
+    <!-- - What percentage of the page was viewed
+        - If they scroll down, and then back up, record the furthest down they ever scrolled -->
 
-    - Time spent hovering the mouse over each element on the page.
+    <!-- - Time spent hovering the mouse over each element on the page. -->
 
     - How many vowels were typed into the text area
         - Count all the text that was typed, not just what ends up in the text-area

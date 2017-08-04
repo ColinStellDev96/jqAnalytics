@@ -11,32 +11,51 @@ $(document).ready(function(){
 
     /*-=-=-= What Percentage of Page Was Viewed =-=-=-*/
 
+        var maxScroll = 0;
         var windowH = $(window).height();
         var docH = $(document).height();
         var scroll = $(window).scrollTop();
         var length = docH - windowH;
-        var percentScroll = scroll / length * 100;
-        var finalPercent = percentScroll + '% scrolled';
+        var percentScroll = Math.round(scroll / length * 100);
+        if (percentScroll > maxScroll) {
+            maxScroll = percentScroll;
+        }
         $(window).on('beforeunload', function() {
-            console.log(finalPercent);
+            console.log(maxScroll + '% scrolled');
         });
 
     /*-=-=-= Time Spent Hovering Mouse Over Each Element on Page =-=-=-*/
 
+        var startHover;
+        var endHover;
+        $('body').hover(function(event){
+            startHover = Date.now();
+        }, function (event) {
+            exitHover = Date.now();
+            hoverTime = exitHover - startHover;
+            console.log(hoverTime);
+        });
 
 
     /*-=-=-= How Many Vowels Types Into Text Area =-=-=-*/
-        var vowels = ['a', 'e', 'i', 'o', 'u'];
-        
+
+
+        $('#textArea').on('keypress', function (){
+            var $textInput = $('#textArea').val().length;
+            var vowels = [65, 69, 73, 79, 85, 97, 101, 105, 111, 117];
+            var vowelCount = 0;
+                for(var i = 0; i < $textInput.length; i++){
+                    if ($textInput.indexOf($textInput[i] !== -1)){
+                        vowelCount.push($textInput[i]);
+                        console.log(vowelCount);
+                    }
+                }
+        });
 
     /*-=-=-= Left By Link =-=-=-*/
-        // LINK ONE
-        $('#linkOne').on('click',function(){
-            console.log("User clicked: https://greatdivide.com/");
-        });
-        // LINK TWO
-        $('#linkTwo').on('click',function(){
-            console.log("User clicked: https://outspoke.co/");
+
+        $('a').click(function(event){
+            console.log($(this).attr('href'));
         });
 
 });
